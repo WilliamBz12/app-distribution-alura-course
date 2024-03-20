@@ -1,0 +1,47 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "app-prod",
+            "cwd": ".",
+            "program": "lib/main_prod.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--target",
+                "lib/main_prod.dart"
+            ]
+        },
+        {
+            "name": "app-dev",
+            "cwd": ".",
+            "program": "lib/main_dev.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--target",
+                "lib/main_dev.dart"
+            ]            
+        },
+        {
+            "name": "app-hml",
+            "cwd": ".",
+            "program": "lib/main_homolog.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "homolog",
+                "--target",
+                "lib/main_homolog.dart"
+            ]            
+        },
+    ]
+}

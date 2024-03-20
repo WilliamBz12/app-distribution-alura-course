@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:secrete_friend_drawer/layout/colors.dart';
-import 'package:secrete_friend_drawer/pages/draw_page.dart';
 
+import 'layout/colors.dart';
+import 'pages/draw_page.dart';
 import 'pages/home_page.dart';
 
-void main() {
+Future<void> mainCommon() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 
